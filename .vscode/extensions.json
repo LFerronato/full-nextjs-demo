@@ -1,0 +1,14 @@
+// 1. Access Extensions tab in your VSCode (ctrl + shift + X)
+// 2. Search for: @recommended
+{
+  "recommendations": [
+    // ESLint
+    "dbaeumer.vscode-eslint",
+    // Editor Config
+    "editorconfig.editorconfig",
+    // Code Spell
+    "streetsidesoftware.code-spell-checker",
+    // Material Icon Theme
+    "pkief.material-icon-theme",
+  ]
+}
