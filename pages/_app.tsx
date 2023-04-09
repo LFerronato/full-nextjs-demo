@@ -1,4 +1,5 @@
 import '@picocss/pico/css/pico.min.css'
+import '@/shared/styles/global.css'
 
 import { useConfigNextApp } from '@/shared/hooks/useConfigNextApp'
 
