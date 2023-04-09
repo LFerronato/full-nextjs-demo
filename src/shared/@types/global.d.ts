@@ -4,9 +4,9 @@ import type { AppProps as OriginalAppProps } from "next/app";
 
 declare global {
 
-  type NextPageWithLayout = OriginalNextPage & {
+  type NextPageWithLayout<T = object> = OriginalNextPage<T> & {
     layout?: OriginalNextPage
-    head?: any
+    head?: JSX.Element
   }
 
   type AppPropsWithLayout = OriginalAppProps & {
