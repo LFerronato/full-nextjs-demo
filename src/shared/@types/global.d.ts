@@ -1,6 +1,6 @@
 import type { PropsWithChildren as OriginalPropsWithChildren } from 'react'
-import type { NextPage as OriginalNextPage } from "next";
-import type { AppProps as OriginalAppProps } from "next/app";
+import type { NextPage as OriginalNextPage } from 'next'
+import type { AppProps as OriginalAppProps } from 'next/app'
 
 declare global {
 
@@ -16,4 +16,4 @@ declare global {
   type PropsWithChildren = OriginalPropsWithChildren
 }
 
-export {};
+export {}

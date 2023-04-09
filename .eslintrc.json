@@ -1,3 +1,38 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "next/core-web-vitals"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "react"
+  ],
+  "rules": {
+    "react/jsx-curly-spacing": "error",
+    "react/jsx-tag-spacing": ["error", { "beforeClosing": "never" }],
+    "react/no-unknown-property": "error",
+
+    // * quote
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "quote-props": ["error", "as-needed"],
+
+    // * Others - style pattern
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],      // or trailingComma, set last comma of obj/arr
+    "no-console": "warn",
+    "editorconfig/indent": "off",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+
+    // * Empty Line - style pattern
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+    "padded-blocks": ["error", "never"]
+
+  }
 }

@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { useRouter } from "next/router"
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export const Header = () => {
   const { push } = useRouter()
@@ -18,6 +18,6 @@ export const Header = () => {
           <li><Link href="/samples/middleware">Sample Middleware</Link></li>
         </ul>
       </nav>
-    </header >
+    </header>
   )
 }

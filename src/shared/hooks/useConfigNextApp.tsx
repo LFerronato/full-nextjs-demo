@@ -1,4 +1,4 @@
-import { HtmlHead } from "../components/HtmlHead"
+import { HtmlHead } from '../components/HtmlHead'
 
 export const useConfigNextApp = ({ Component }: Pick<AppPropsWithLayout, 'Component'>) => {
   // Use the layout defined at the pages/* level, if available

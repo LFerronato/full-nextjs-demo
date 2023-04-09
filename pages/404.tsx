@@ -1,12 +1,12 @@
-import _Layout from "@/domains/layout";
-import Image from "next/image";
-import Link from "next/link";
+import _Layout from '@/domains/layout'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const NotFound: NextPageWithLayout = () => {
   return (
     <div
       className="container"
-      style={{ textAlign: 'center', paddingTop: '1rem', }}
+      style={{ textAlign: 'center', paddingTop: '1rem' }}
     >
       <h1>Oops! 404</h1>
       <p>Oops! The page you requested could not be found.</p>
