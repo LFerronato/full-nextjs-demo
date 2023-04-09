@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
-import { Header } from './_/Header'
-import { Footer } from './_/Footer'
+import { Header } from './_/layout-components/Header'
+import { Footer } from './_/layout-components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +19,7 @@ export const GlobalLayout = ({ children }: PropsWithChildren) => {
       </main>
 
       <Footer />
+      
     </div>
   )
 }

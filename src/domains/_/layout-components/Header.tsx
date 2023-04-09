@@ -15,6 +15,7 @@ export const Header = () => {
           <li><Link href="/samples/strategy-ssr">Sample SSR</Link></li>
           <li><Link href="/samples/strategy-isr">Sample ISR</Link></li>
           <li><Link href="/samples/next-image">Sample Image</Link></li>
+          <li><Link href="/samples/middleware">Sample Middleware</Link></li>
         </ul>
       </nav>
     </header >
