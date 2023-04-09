@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: { appDir: false },
   images: {
-    domains: ['media.giphy.com'],
+    domains: ['media.giphy.com', 'cdn.jsdelivr.net'],
   },
 }
 
