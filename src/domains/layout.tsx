@@ -14,12 +14,12 @@ export const GlobalLayout = ({ children }: PropsWithChildren) => {
     >
       <Header />
 
-      <main style={{ height: '100%' }}>
+      <main style={{ height: '100%' }} className="p-rem">
         {children}
       </main>
 
       <Footer />
-      
+
     </div>
   )
 }

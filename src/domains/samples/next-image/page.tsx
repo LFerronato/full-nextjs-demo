@@ -1,16 +1,12 @@
-import Image from 'next/image'
+import dynamic from 'next/dynamic'
 
-const images = [
-  'images/large-image1.jpg',
-  'images/large-image2.jpg',
-  'images/large-image3.jpg',
-  'images/large-image4.jpg',
-  'images/large-image5.jpg',
-]
+const ImagesSection = dynamic(import('./_/ImagesSection').then(mod => mod.ImagesSection), {
+  loading: () => <article aria-busy="true">Carregando</article>,
+})
 
 const SampleImagePage = () => {
   return (
-    <div className="flex-center flex-col p-rem" style={{ height: '100%' }}>
+    <div className="flex-col" style={{ height: '100%' }}>
 
       <div style={{ margin: '2rem 0' }}>
         <h1 style={{ margin: 0 }}>Image Component - {'<Image />'}</h1>
@@ -26,27 +22,7 @@ const SampleImagePage = () => {
         </li>
       </div>
 
-      <section className="flex-center flex-col" style={{ position: 'relative', marginTop: '3rem' }}>
-        <p><b>5 imagens de alta definição (2x)</b></p>
-        {images.map(image => (
-          <Image key={image}
-            src={require(`@/../public/${image}`)}
-            placeholder="blur"
-            alt={image}
-            quality={100}
-            style={{ margin: '1rem 0' }}
-          />
-        ))}
-        {images.map(image => (
-          <Image key={image}
-            src={require(`@/../public/${image}`)}
-            placeholder="blur"
-            alt={image}
-            quality={100}
-            style={{ margin: '1rem 0' }}
-          />
-        ))}
-      </section>
+      <ImagesSection />
 
     </div>
   )
