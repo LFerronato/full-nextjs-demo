@@ -15,7 +15,7 @@ export const GlobalLayout = ({ children }: PropsWithChildren) => {
         position: 'relative',
       }}
     >
-      <Header style={{ position: 'sticky', top: 0, background: '#0a0a0b' }} />
+      <Header style={{ position: 'sticky', top: 0, zIndex: 1, background: '#0a0a0b' }} />
 
       <main className="p-rem" style={{ flexGrow: 1, width: '100%', ...MAX_WIDTH }}>
         {children}
