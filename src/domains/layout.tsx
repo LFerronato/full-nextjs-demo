@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import { Header } from './_/layout/Header'
 import { Footer } from './_/layout/Footer'
+// import { EasyChangePrimaryColorTheme } from './_/layout/EasyChangePrimaryColorTheme'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,8 @@ export const GlobalLayout = ({ children }: PropsWithChildren) => {
       </main>
 
       <Footer />
+
+      {/* <EasyChangePrimaryColorTheme /> */}
 
     </div>
   )
