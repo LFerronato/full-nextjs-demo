@@ -1,0 +1,86 @@
+.container {
+  margin-top: 50px;
+  margin-bottom: 5rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.container p {
+  margin-bottom: 0.2rem;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.name {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.name:hover,
+.name:focus,
+.name:active {
+  text-decoration: underline;
+}
+
+.username {
+  margin-bottom: 3rem;
+  color: var(--h4-color);
+}
+
+.stats {
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .stats {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.stats>div {
+  background-color: var(--switch-background-color);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.stats>div>h1,
+.stats>div>h3 {
+  margin: 0px;
+}
+
+.stats>div>h3 {
+  color: var(--h4-color);
+}
+
+
+.createdAt {
+  max-width: 50%;
+  width: fit-content;
+  margin: 1rem auto;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--switch-background-color);
+}
+
+
+.dataViewer {
+  text-align: left;
+  max-width: min(80%, 764px);
+  margin: auto;
+  overflow-y: auto;
+  background-color: var(--switch-background-color);
+  box-shadow: 0 20px 40px #00000020;
+  border-radius: 1rem;
+  padding: 2rem;
+}
