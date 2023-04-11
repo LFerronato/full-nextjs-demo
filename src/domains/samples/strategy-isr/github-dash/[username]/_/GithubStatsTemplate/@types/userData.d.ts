@@ -1,22 +1,3 @@
-export type UserData = {
-  id: number,
-  name: string,
-  username: string,
-  avatar_url: string,
-  url: string,
-  type: 'User',
-  company: string | null,
-  website: string | null,
-  location: string | null,
-  email: string | null,
-  bio: string | null,
-  twitter_username: string | null,
-  public_repos: number,
-  public_gists: number,
-  followers: number,
-  following: number,
-  total_stars: number,
-  total_forks: number,
-  created_at: string,
-  updated_at: string,
-}
+import useGithubStats from 'react-github-user-stats'
+
+export type UserData = ReturnType<typeof useGithubStats>['userData']

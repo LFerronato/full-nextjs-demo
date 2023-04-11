@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import useGithubStats from 'react-github-user-stats'
-type GithubStats = typeof useGithubStats
 
 import styles from './styles/Template.module.css'
 
