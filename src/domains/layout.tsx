@@ -1,8 +1,10 @@
 import { Inter } from 'next/font/google'
-import { Header } from './_/layout-components/Header'
-import { Footer } from './_/layout-components/Footer'
+import { Header } from './_/layout/Header'
+import { Footer } from './_/layout/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
+
+export const MAX_WIDTH = { maxWidth: '1400px', margin: '0 auto' }
 
 export const GlobalLayout = ({ children }: PropsWithChildren) => {
   return (
@@ -10,11 +12,12 @@ export const GlobalLayout = ({ children }: PropsWithChildren) => {
       style={{
         minHeight: '100vh',
         display: 'flex', flexDirection: 'column',
+        position: 'relative',
       }}
     >
-      <Header />
+      <Header style={{ position: 'sticky', top: 0, background: '#0a0a0b' }} />
 
-      <main style={{ height: '100%' }} className="p-rem">
+      <main className="p-rem" style={{ flexGrow: 1, width: '100%', ...MAX_WIDTH }}>
         {children}
       </main>
 

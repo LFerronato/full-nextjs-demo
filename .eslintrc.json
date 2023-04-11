@@ -33,6 +33,6 @@
     "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
     "padded-blocks": ["error", "never"]
-
-  }
+  },
+  "ignorePatterns": ["*.js"]
 }

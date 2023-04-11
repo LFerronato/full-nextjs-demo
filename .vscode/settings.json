@@ -7,6 +7,11 @@
   "material-icon-theme.folders.associations": {
     "domains": "plugin",
     "pages": "routes",
+    "strategy-isr/github": "batch"
+  },
+  "material-icon-theme.files.associations": {
+    "page.tsx": "http",
+    "layout.tsx": "exe"
   },
   "cSpell.words": [
     "picocss"
