@@ -1,38 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="public\next-white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="public\next.svg">
+    <img style="padding: 3rem;" src="public\next.svg" alt="Logo" width="394" height="80">
+  </picture>
 
-## Getting Started
+  <h2 align="center">A practical demonstration of NextJS 13 (version LTS)</h2>
+</p>
 
-First, run the development server:
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<!-- TABLE OF CONTENTS -->
+---
+* [About this Project](#about-this-project)
+* [Used Features](#used-features)
+* [Getting Started](#getting-started)
+---
+
+<br>
+
+<!-- ABOUT this PROJECT -->
+## About this Project
+Just some samples of some features we have today in NextJS 13 LTS release (without the beta app directory) :computer:
+<br>
+<em style="color: #6a994e;">PS: but, it was thought to be the closest/compatible with the new App folder</em>
+
+<br>
+
+# Used/Demo Features
+* file-based routing
+* `Link` component
+* `Image` component
+* Optimized Fonts (custom and google)
+* Strategies: SSG, ISR, SSR
+
+
+<br>
+
+### Built With
+* [Next.js](https://nextjs.org)
+* [PicoCSS](https://picocss.com) (simple - just a little bit of beauty)
+
+<br>
+<br>
+<br>
+
+<!-- GETTING STARTED -->
+# Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+<br>
+<br>
+
+## Installation
+> pre-requirements: `nodejs - LTS version`
+1. Clone this repository
+2. Install npm packages and start the project locally
+```sh
+  npm i && npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
+<br>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Recommendations
+1. [VS Code] install all recommended extensions, search for: `@recommended`
+2. Use unix-based OS (likelinux, macOS or WSL on Windows)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<br>
+<br>
+<br>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```json
+  "devs":
+  [
+    "Lucas Ferronato (github.com/LFerronato)",
+  ]
+```
 
-## Learn More
+# Next steps
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[ ] get exemple from Iris DS of Link
