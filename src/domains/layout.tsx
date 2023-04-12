@@ -1,15 +1,14 @@
-import { Inter } from 'next/font/google'
 import { Header } from './_/layout/Header'
 import { Footer } from './_/layout/Footer'
-// import { EasyChangePrimaryColorTheme } from './_/layout/EasyChangePrimaryColorTheme'
+import { interFont } from '@/shared/styles/fonts'
 
-const inter = Inter({ subsets: ['latin'] })
+// import { EasyChangePrimaryColorTheme } from './_/layout/EasyChangePrimaryColorTheme'
 
 export const MAX_WIDTH = { maxWidth: '1400px', margin: '0 auto' }
 
 export const GlobalLayout = ({ children }: PropsWithChildren) => {
   return (
-    <div className={inter.className} data-theme="dark"
+    <div className={interFont.className} data-theme="dark"
       style={{
         minHeight: '100vh',
         display: 'flex', flexDirection: 'column',
