@@ -1,5 +1,4 @@
-import { useRouter } from 'next/router'
-import useGithubStats from 'react-github-user-stats'
+import type { UserData } from './@types/userData'
 
 import styles from './styles/Template.module.css'
 
@@ -7,13 +6,7 @@ import Stats from './Stats'
 import Avatar from './Avatar'
 import DataViewer from './DataViewer'
 
-export const Repos = () => {
-  const { query } = useRouter()
-  const username = query.username as string
-  const { error, loading, userData } = useGithubStats(username)
-
-  if (loading) return <h2>Loading data..</h2>
-  if (error) return <h2>ERROR: {error}</h2>
+export const GithubStatsTemplate = ({ userData }: { userData: UserData }) => {
   if (!userData) return <h2>Not found!</h2>
 
   const accountCreatedAt = new Date(userData.created_at)

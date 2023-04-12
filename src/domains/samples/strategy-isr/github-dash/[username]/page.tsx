@@ -1,10 +1,8 @@
-import dynamic from 'next/dynamic'
+import type { UserData } from './_/GithubStatsTemplate/@types/userData'
 
-const GithubStatsTemplate = dynamic(import('./_/GithubStatsTemplate').then(mod => mod.Repos), {
-  loading: () => (<article data-busy />),
-})
+import { GithubStatsTemplate } from './_/GithubStatsTemplate'
 
-export default function Page() {
+export default function Page({ userData }: { userData: UserData }) {
   return (
     <div
       style={{
@@ -13,7 +11,7 @@ export default function Page() {
       }}
     >
 
-      <GithubStatsTemplate />
+      <GithubStatsTemplate userData={userData} />
 
     </div>
   )
