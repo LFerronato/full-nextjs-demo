@@ -1,35 +1,43 @@
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { FormEventHandler, useState } from 'react'
 
 const Page = () => {
   const { push } = useRouter()
 
-  const [username, setUsername] = useState('LFerronato')
+  const [username, setUsername] = useState('')
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
+    e.preventDefault()
+
+    setLoading(true)
+    await push(`/samples/strategy-isr/github-dash/${username}`)
+    setUsername('')
+    setLoading(false)
+  }
 
   return (
     <div>
-      <h1 style={{ margin: '1rem 0' }}>ISR - Incremental Static Regeneration</h1>
+      <h1 style={{ margin: '1rem 0', fontSize: '1.2rem' }}>ISR - Incremental Static Regeneration</h1>
       <hr />
 
       <section>
-        <h2 style={{ margin: '2rem 0' }}>📊 GitHub Dashboard</h2>
+        <h2 style={{ margin: '1rem 0', fontSize: '1.2rem' }}>📊 GitHub Dashboard</h2>
 
-        <div className="p-rem">
-          <label htmlFor="profile">GitHub Profile Username:</label>
-          <input id="profile" type="text" value={username} onChange={e => setUsername(e.target.value)} />
-        </div>
+        <form onSubmit={handleSubmit} className="p-rem" style={{ margin: 0 }}>
+          <div>
+            <label htmlFor="profile">GitHub Profile Username:</label>
+            <input id="profile" type="text" value={username} onChange={e => setUsername(e.target.value)} />
+          </div>
 
-        <button
-          onClick={async () => {
-            // setLoading(true)
-            await push(`/samples/strategy-isr/github-dash/${username}`)
-            // setName('')
-            // setLoading(false)
-          }}
-        // aria-busy={loading}
-        >
-          Ir para o Dashboard do seu Perfil
-        </button>
+          <button
+            type="submit"
+            aria-busy={loading}
+            disabled={!username}
+          >
+            Ir para o Dashboard do seu Perfil
+          </button>
+        </form>
       </section>
 
     </div>

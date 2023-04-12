@@ -9,17 +9,19 @@ const StatsOfNamePage = ({ stats, name }: StatsOfNamePageProps) => {
       <h2 style={{ textAlign: 'center' }}>{name}</h2>
 
       <div className="grid" style={{ gap: '1rem', width: '100%' }}>
-        <div style={{ border: '1px solid' }}>
-          <pre>
-            {JSON.stringify(stats.fetchAge, null, 4)}
-          </pre>
+        <div>
+          <div style={{ border: '1px solid', borderRadius: '8px', marginBottom: '1rem' }}>
+            <pre>
+              {JSON.stringify(stats.fetchAge, null, 4)}
+            </pre>
+          </div>
+          <div style={{ border: '1px solid', borderRadius: '8px' }}>
+            <pre>
+              {JSON.stringify(stats.fetchGender, null, 4)}
+            </pre>
+          </div>
         </div>
-        <div style={{ border: '1px solid' }}>
-          <pre>
-            {JSON.stringify(stats.fetchGender, null, 4)}
-          </pre>
-        </div>
-        <div style={{ border: '1px solid' }}>
+        <div style={{ border: '1px solid', borderRadius: '8px' }}>
           <pre>
             {JSON.stringify(stats.fetchCountry, null, 4)}
           </pre>
