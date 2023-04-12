@@ -13,7 +13,7 @@
 <!-- TABLE OF CONTENTS -->
 ---
 * [About this Project](#about-this-project)
-* [Used Features](#used-features)
+* [Used Features](#useddemo-features)
 * [Getting Started](#getting-started)
 ---
 
@@ -28,20 +28,24 @@ Just some samples of some features we have today in NextJS 13 LTS release (witho
 <br>
 
 # Used/Demo Features
-* file-based routing
-* `Link` component
-* `Image` component
-* Optimized Fonts (custom and google)
-* Strategies: SSG, ISR, SSR
+- [x] Routing (file-based routing)
+- [x] Dynamic Routes
+- [x] `Link` component
+- [x] `Image` component
+- [x] Optimized Fonts (custom and google)
+- [x] Strategies: SSG, ISR, SSR
+- [ ] Middleware
+- [ ] API / BFF
 
 
+
+<br>
 <br>
 
 ### Built With
 * [Next.js](https://nextjs.org)
 * [PicoCSS](https://picocss.com) (simple - just a little bit of beauty)
 
-<br>
 <br>
 <br>
 
@@ -71,7 +75,6 @@ To get a local copy up and running follow these simple example steps.
 
 <br>
 <br>
-<br>
 
 
 ```json
@@ -80,6 +83,9 @@ To get a local copy up and running follow these simple example steps.
     "Lucas Ferronato (github.com/LFerronato)",
   ]
 ```
+
+<br>
+<br>
 
 # Next steps
 
