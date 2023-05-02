@@ -1,12 +1,15 @@
+import { interFont, outfitFont } from '@/common/fonts'
+
 import { Header } from './_layout/Header'
 import { Footer } from './_layout/Footer'
-import { interFont, outfitFont } from '@/common/fonts'
 
 export const MAX_WIDTH = { maxWidth: '1400px', margin: '0 auto' }
 
 export const GlobalLayout = ({ children }: PropsWithChildren) => {
   return (
-    <div className={`${interFont.className} ${outfitFont.variable}`} data-theme="dark"
+    <div
+      data-theme="dark"
+      className={`${interFont.className} ${outfitFont.variable}`}
       style={{
         minHeight: '100vh',
         display: 'flex', flexDirection: 'column',
