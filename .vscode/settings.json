@@ -7,13 +7,18 @@
   "material-icon-theme.folders.associations": {
     "domains": "plugin",
     "pages": "routes",
-    "strategy-isr/github": "batch"
+    "_": "layout",
+    "_page": "layout",
+    "_layout": "layout",
+    "strategy-isr/github": "batch",
   },
   "material-icon-theme.files.associations": {
     "page.tsx": "http",
     "layout.tsx": "exe"
   },
   "cSpell.words": [
+    "giphy",
+    "latin",
     "picocss"
   ]
 }

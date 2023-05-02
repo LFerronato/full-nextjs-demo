@@ -1,29 +1,7 @@
-import _Layout from '@/domains/layout'
-import Image from 'next/image'
-import Link from 'next/link'
+import _Layout from '@/app/layout'
+import _NotFound from '@/app/not-found'
 
-const NotFound: NextPageWithLayout = () => {
-  return (
-    <div
-      className="container"
-      style={{ textAlign: 'center', paddingTop: '1rem' }}
-    >
-      <h1>Oops! 404</h1>
-      <p>Oops! The page you requested could not be found.</p>
-      <div>
-        <Image
-          src="https://media.giphy.com/media/aYpmlCXgX9dc09dbpl/giphy.gif"
-          alt="Sad cat 404 gif"
-          width="480" height="480"
-          style={{ borderRadius: '1rem' }}
-        />
-      </div>
-
-      <Link href="/" style={{ display: 'block', margin: '1rem 0' }}>Voltar para página inicial</Link>
-    </div>
-  )
-}
-
+const NotFound: NextPageWithLayout = _NotFound
 NotFound.layout = _Layout
 
 export default NotFound

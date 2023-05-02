@@ -1,0 +1,12 @@
+/* PicoCSS already resets the default browser CSS */
+
+body {
+  background-image: url("/grid.svg");
+  background-repeat: repeat;
+  background-color: #0a0a0b;
+}
+
+pre {
+  margin: 4px;
+  padding: 4px;
+}

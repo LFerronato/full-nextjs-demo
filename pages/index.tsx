@@ -1,8 +1,7 @@
-import _Page from '@/domains/page'
-import _Layout from '@/domains/layout'
+import _Page from '@/app/(home)/page'
+import _RootLayout from '@/app/layout'
 
 const HomePage: NextPageWithLayout = _Page
-
-HomePage.layout = _Layout
+HomePage.layout = _RootLayout
 
 export default HomePage

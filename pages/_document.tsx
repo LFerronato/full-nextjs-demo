@@ -4,13 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head />
-      <body
-        style={{
-          backgroundImage: 'url("/grid.svg")',
-          backgroundRepeat: 'repeat',
-          backgroundColor: '#0a0a0b',
-        }}
-      >
+      <body>
         <Main />
         <NextScript />
       </body>
