@@ -5,7 +5,7 @@
     <img style="padding: 3rem;" src="public\next.svg" alt="Logo" width="394" height="80">
   </picture>
 
-  <h2 align="center">A practical demonstration of NextJS 13 (version LTS)</h2>
+  <h2 align="center">A practical demonstration of NextJS 13 (LTS version)</h2>
 </p>
 
 <br>
@@ -23,19 +23,19 @@
 ## About this Project
 Just some samples of some features we have today in NextJS 13 LTS release (without the beta app directory) :computer:
 <br>
-<em style="color: #6a994e;">PS: but, it was thought to be the closest/compatible with the new App folder</em>
+<b><em style="color: #6a994e;">PS: but, it was thought to be the closest/compatible with the new App folder</em></b>
 
 <br>
 
 # Used/Demo Features
-- [x] Routing (file-based routing)
+- [x] Basic Routing (file-based routing)
 - [x] Dynamic Routes
 - [x] `Link` component
 - [x] `Image` component
-- [x] Optimized Fonts (custom and google)
+- [x] Optimized Fonts (from Custom and Google Fonts)
 - [x] Strategies: SSG, ISR, SSR
 - [ ] Middleware
-- [ ] API / BFF
+- [ ] API / BFF (maybe tRPC)
 
 
 
