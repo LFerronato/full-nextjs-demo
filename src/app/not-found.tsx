@@ -7,7 +7,7 @@ export default function NotFound() {
       className="container"
       style={{ textAlign: 'center', paddingTop: '1rem' }}
     >
-      <h1>Oops! 404</h1>
+      <h1>Oops! <span data-num>404</span></h1>
       <p>Oops! The page you requested could not be found.</p>
       <div>
         <Image

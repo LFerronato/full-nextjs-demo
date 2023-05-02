@@ -10,3 +10,7 @@ pre {
   margin: 4px;
   padding: 4px;
 }
+
+[data-num] {
+  font-family: var(--font-numeric),'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

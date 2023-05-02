@@ -1,14 +1,12 @@
 import { Header } from './_layout/Header'
 import { Footer } from './_layout/Footer'
-import { interFont } from '@/common/fonts'
-
-// import { EasyChangePrimaryColorTheme } from './_/layout/EasyChangePrimaryColorTheme'
+import { interFont, outfitFont } from '@/common/fonts'
 
 export const MAX_WIDTH = { maxWidth: '1400px', margin: '0 auto' }
 
 export const GlobalLayout = ({ children }: PropsWithChildren) => {
   return (
-    <div className={interFont.className} data-theme="dark"
+    <div className={`${interFont.className} ${outfitFont.variable}`} data-theme="dark"
       style={{
         minHeight: '100vh',
         display: 'flex', flexDirection: 'column',
@@ -22,8 +20,6 @@ export const GlobalLayout = ({ children }: PropsWithChildren) => {
       </main>
 
       <Footer />
-
-      {/* <EasyChangePrimaryColorTheme /> */}
 
     </div>
   )

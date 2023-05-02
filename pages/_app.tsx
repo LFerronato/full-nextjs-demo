@@ -1,7 +1,7 @@
 import '@picocss/pico/css/pico.min.css'
-import '@/shared/styles/global.css'
-import '@/shared/styles/pico-custom-theme.css'
-import '@/shared/styles/custom-quick-classes.css'
+import '@/common/styles/global.css'
+import '@/common/styles/pico-custom-theme.css'
+import '@/common/styles/custom-quick-classes.css'
 
 import { useConfigNextApp } from '@/common/hooks/useConfigNextApp'
 
