@@ -2,8 +2,6 @@ import { useRouter } from 'next/router'
 import { FormEventHandler, useEffect, useState } from 'react'
 import { sleep } from '@/common/utils/sleep'
 
-const Banner = () => <span style={{ fontSize: '0.5rem', color: 'gray' }}>não necessário preencher</span>
-
 export const LoginPage = () => {
   const { push } = useRouter()
 
@@ -14,7 +12,7 @@ export const LoginPage = () => {
 
     setLoading(true)
     // simulate a call for API
-    await sleep(1000)
+    await sleep(2000)
     // set cookie
     // await push('/samples/middleware/auth-routes/admin-painel')
     setLoading(false)
@@ -29,15 +27,15 @@ export const LoginPage = () => {
 
       <h1>Login</h1>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ maxWidth: '500px', margin: '0 auto' }}>
 
         <div>
-          <label htmlFor="input-user">User <Banner /></label>
-          <input id="input-user" />
+          <label htmlFor="input-user">User</label>
+          <input id="input-user" placeholder="não necessário preencher" />
         </div>
         <div>
-          <label htmlFor="input-user">Senha <Banner /></label>
-          <input id="input-user" />
+          <label htmlFor="input-user">Senha</label>
+          <input id="input-user" placeholder="não necessário preencher" />
         </div>
 
         <button type="submit" data-busy={loading}>Sign-in</button>

@@ -20,11 +20,17 @@ export const MiddlewarePage = () => {
           Auth routes
         </Link>
 
-        <Link href="/samples/middleware/mobile" aria-disabled>
+        <Link
+          href="#"
+          // href="/samples/middleware/mobile"
+          aria-disabled>
           Redirect Mobile
         </Link>
 
-        <Link href="/samples/middleware/geolocation" aria-disabled>
+        <Link
+          href="#"
+          // href="/samples/middleware/geolocation"
+          aria-disabled>
           Redirect Geolocalização
         </Link>
 
